@@ -8,7 +8,6 @@ namespace AutomatedTests.Tests
     public class GitHubApiTests
     {
         private const string GitHubApiBaseUrl = "https://api.github.com";
-        private const string PersonalAccessToken = "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";
 
         [Test]
         public void TestGetGitHubRepository()
