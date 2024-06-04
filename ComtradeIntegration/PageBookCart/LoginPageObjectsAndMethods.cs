@@ -21,7 +21,7 @@ namespace PageBookCart
 
         public LoginPageObjectsAndMethods EnterUserName(string username)
         {
-            IWebElement userName = driver.FindElement(By.XPath("//input[@data-placeholder = 'Username']"));
+            IWebElement userName = driver.FindElement(By.XPath("//input[@placeholder = 'Username']"));
             wdWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(userName));
             userName.Clear();
             userName.SendKeys(username);
@@ -30,7 +30,7 @@ namespace PageBookCart
 
         public LoginPageObjectsAndMethods EnterUserPassword(string userpassword)
         {
-            IWebElement userPassword = driver.FindElement(By.XPath("//input[@data-placeholder = 'Password']"));
+            IWebElement userPassword = driver.FindElement(By.XPath("//input[@placeholder = 'Password']"));
             wdWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(userPassword));
             userPassword.Clear();
             userPassword.SendKeys(userpassword);
